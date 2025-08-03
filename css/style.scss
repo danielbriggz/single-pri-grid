@@ -1,0 +1,98 @@
+:root {
+    --color-pry-teal: hsl(179, 62%, 43%);
+    --color-pry-green: hsl(71, 73%, 54%);
+    --color-neut-teal: hsl(204, 43%, 93%);
+    --color-neut-gray: hsl(218, 22%, 67%);
+    --color-neut-white: hsl(0, 0%, 100%);
+    --font-family-main: 'Roboto', 'Calibri', sans-serif;
+    --base-font-size: 16px;
+    --font-weight-small: 400;
+    --font-weight-big: 700;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: var(--font-family-main);
+    font-size: var(--base-font-size);
+}
+
+.container {
+    // padding: 0.5rem;
+    border: 1px solid red;
+    width: 600px;
+    border-radius: 0.5rem;
+}
+
+.card {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.invite-card {
+    background-color: var(--color-neut-white);
+    border: 1px solid green;
+    // box-shadow: 0px 0px 3px var(--color-neut-gray);
+
+    h4 {
+        color: var(--color-pry-teal);
+        font-weight: var(--font-weight-big);
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    p{
+        color: var(--color-neut-gray);
+        font-weight: var(--font-weight-small);
+        width: 90%;
+        word-wrap: break-word;
+        line-height: 150%;
+        margin: 1rem 0;
+    }
+
+    .warranty {
+        font-weight: var(--font-weight-big);
+        color: var(--color-pry-green);
+        font-size: 1.1rem;
+        line-height: normal;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.subscription-card {
+    flex: 50%;
+    background-color: var(--color-pry-teal);
+    color: var(--color-neut-teal);
+    align-items: center;
+    // padding: 1rem;
+
+    h5 {
+        margin: 0;
+        font-size: 1.15rem;
+        font-weight: var(--font-weight-big);
+    }
+
+    p.price {
+        display: flex;
+        font-weight: var(--font-weight-big);
+        font-size: 1.5rem;
+        align-items: center;
+        gap: 0.25em;
+        margin: 1rem 0;
+
+        span {
+            color: var(--color-neut-teal);
+            opacity: .6;
+            font-size: .6em;
+            font-weight: normal;
+        }
+    }
+}
+
+.reason-card {
+    background-color: rgba($color: hsl(179, 75%, 64%), $alpha: 1.0);
+}
